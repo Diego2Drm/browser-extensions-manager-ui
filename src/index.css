@@ -1,0 +1,25 @@
+@import "tailwindcss";
+@font-face {
+  font-family: Noto-Sans;
+  src: url('./assets/fonts/NotoSans-Italic-VariableFont_wdth\,wght.ttf');
+}
+
+body {
+  font-family: Noto-Sans;
+}
+
+@theme {
+  /* ### Neutral */
+  --color-Neutral-900: #09153e;
+  --color-Neutral-800: #212636;
+  --color-Neutral-700: #2f364b;
+  --color-Neutral-600: #545969;
+  --color-Neutral-300: #c7c7c7;
+  --color-Neutral-200: #d6e2f5;
+  --color-Neutral-100: #ededed;
+  --color-Neutral-0: #fbfdfe;
+  /* ### Red */
+  --color-Red-400: #f25c54;
+  --color-Red-500: #de473f;
+  --color-Red-700: #c7221a;
+}
