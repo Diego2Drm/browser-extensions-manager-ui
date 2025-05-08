@@ -1,8 +1,12 @@
 import React from "react"
+import { Layout } from "./Layout"
+import { Hero } from "./components/Hero"
 
 function App() {
   return (
-    <h1 className="text-Red-700 font-bold text-3xl">Browser Extensions Manager UI</h1>
+    <Layout>
+      <Hero />
+    </Layout>
   )
 }
 
