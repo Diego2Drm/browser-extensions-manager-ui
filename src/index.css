@@ -1,7 +1,9 @@
 @import "tailwindcss";
+
 @font-face {
   font-family: Noto-Sans;
-  src: url('./assets/fonts/NotoSans-Italic-VariableFont_wdth\,wght.ttf');
+  src: url('./assets/fonts/NotoSans-Italic-VariableFont_wdth,wght.ttf'),
+    url('./assets/fonts/NotoSans-VariableFont_wdth,wght.ttf');
 }
 
 body {
@@ -24,9 +26,10 @@ body {
   --color-Red-700: #c7221a;
 }
 
-label input:checked ~ span {
+label input:checked~span {
   @apply right-1 translate-x-5
- }
- label input:checked ~ b {
+}
+
+label input:checked~b {
   @apply bg-Red-700
- }
+}

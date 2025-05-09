@@ -5,10 +5,12 @@ import { Cards } from "./Cards";
 
 const Extensions = () => {
   return (
-    <section className="flex flex-col items-center mt-8">
-      <h1 className="text-3xl text-Neutral-900 font-bold font-sans tracking-wide mb-4">Extensions List</h1>
+    <section>
+      <div className="flex flex-col items-center mt-8 lg:flex-row lg:justify-between">
+        <h1 className="text-3xl text-Neutral-900 font-bold font-sans tracking-wide mb-4 lg:w-full">Extensions List</h1>
 
-      <ListButtons />
+        <ListButtons />
+      </div>
       <Cards />
 
     </section>
