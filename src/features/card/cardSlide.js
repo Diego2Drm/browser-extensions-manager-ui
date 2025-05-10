@@ -1,7 +1,14 @@
 import { createSlice } from "@reduxjs/toolkit";
 import JsonData from "../../data.json"
 
-const initialState = JsonData
+const DEFAULT_STATE = JsonData
+
+const initialState = (() => {
+  const stateLocalStorage = localStorage.getItem("__redux__state__");
+    if(stateLocalStorage) return JSON.parse(stateLocalStorage).data;
+    return DEFAULT_STATE;
+
+})();
 
 export const cardSlice = createSlice({
   name: "data",
