@@ -7,10 +7,12 @@ import { useSelector } from "react-redux";
 const Extensions = () => {
   const data = useSelector(state => state.data)
   const [filter, setFilter] = useState("All");
-  
+
   const filteredData = data.filter(item =>
-    filter === "Active" ? item.isActive :
-      filter === "Inactive" ? !item.isActive : true
+    !item.isDeleted && (
+      filter === "Active" ? item.isActive :
+        filter === "Inactive" ? !item.isActive : true
+    )
   )
 
   return (
