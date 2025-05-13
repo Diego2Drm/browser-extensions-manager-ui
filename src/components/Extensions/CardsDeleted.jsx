@@ -16,10 +16,10 @@ const CardsDeleted = () => {
             {deletedItems.map((item) => (
               <div key={item.name} className="bg-Neutral-100 p-3 rounded-lg my-3 flex flex-col items-center">
                 <p className="font-sans text-lg text-Neutral-700 font-bold">{item.name}</p>
-                <button className="border-Neutral-500 border-2 px-2 py-1 rounded-3xl text-xs font-semibold cursor-pointer"
+                <button className="border-Neutral-500 border-2 px-2 py-1 rounded-3xl text-xs font-semibold cursor-pointer hover:bg-green-800 hover:text-Neutral-0 duration-300 ease-in-out focus:text-Neutral-900 focus:bg-Neutral-300"
                   onClick={() => dispatch(restoreExtension(item.name))}
                 >
-                  Restaurar
+                  Restore
                 </button>
               </div>
             ))}

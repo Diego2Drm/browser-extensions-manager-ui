@@ -19,7 +19,7 @@ const Cards = ({ filteredData }) => {
                 </p>
               </div>
               <div className="flex justify-between items-center mt-5 lg:mt-10">
-                <button className="border-Neutral-300 border-2 px-2 py-1 rounded-3xl text-xs text-Neutral-900 font-semibold font-sans cursor-pointer"
+                <button className="border-Neutral-300 border-2 px-2 py-1 rounded-3xl text-xs text-Neutral-900 font-semibold font-sans cursor-pointer hover:bg-Red-500 hover:text-Neutral-0 duration-300 ease-in-out focus:border-Red-500 focus:border-2 focus:text-Neutral-900 focus:bg-Neutral-300"
                   onClick={() => dispatch(removeExtension(item.name))}
                 >
                   Remove
