@@ -1,6 +1,7 @@
 import { useDispatch } from "react-redux";
 import { isActiveExtencion, removeExtension } from "../../features/card/cardSlide";
 import { CardsDeleted } from "./CardsDeleted";
+import { imageMap } from "../../utils/imgForCard";
 
 const Cards = ({ filteredData }) => {
   const dispatch = useDispatch();
@@ -12,7 +13,7 @@ const Cards = ({ filteredData }) => {
           filteredData.map((item, i) => (
             <div key={i} className="bg-Neutral-0 my-5 p-3 rounded-l dark:bg-Neutral-800">
               <div className="flex gap-3 items-start">
-                <img src={item.logo} alt={item.name} />
+                <img src={imageMap[item.logo]} alt={item.name} />
                 <p className="flex flex-col pr-10">
                   <span className="font-sans text-lg text-Neutral-900 font-bold dark:text-Neutral-0">{item.name}</span>
                   <span className="leading-5 text-Neutral-600 dark:text-Neutral-300">{item.description}</span>
